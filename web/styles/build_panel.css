@@ -1,0 +1,59 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  background-color: #c9d6ff;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+.body {
+  width: 100%;
+  margin-top: 20vh;
+  position: absolute;
+}
+.container {
+  width: 90%;
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+  margin: 0px 25px 8px 25px;
+  border: 2px solid gray;
+  padding: 4px;
+  overflow: hidden;
+  background: linear-gradient(to right, rgb(102, 219, 174), rgb(145, 214, 226));
+}
+.intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  float: right;
+}
+
+.accept,
+.reject {
+  background-color: rgb(88, 136, 82);
+  padding: 5px;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: aliceblue;
+}
+
+h4 {
+  margin: 10px;
+}
+
+.about_us {
+  margin-top: 8vh;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  size: 100%;
+  z-index: -2;
+}

@@ -1,0 +1,60 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  background-color: #c9d6ff;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+.body {
+  margin-top: 20vh;
+  position: absolute;
+}
+.container {
+  width: 96%;
+  height: 20vh;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+  margin: 0px 25px 8px 25px;
+  border: 2px solid gray;
+  padding: 4px;
+  overflow: hidden;
+  background: linear-gradient(to right, rgb(57, 212, 65), rgb(135, 241, 135));
+}
+.container:hover {
+  background-color: lightgray;
+  height: fit-content;
+}
+.intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.accept, .reject {
+  background-color: rgb(88, 136, 82);
+  padding: 5px;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: aliceblue;
+}
+
+h4 {
+  margin: 10px;
+}
+
+.about_us {
+  margin-top: 8vh;
+}
+
+video{
+  position: fixed;
+  z-index: -2;
+}

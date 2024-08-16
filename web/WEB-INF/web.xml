@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <welcome-file-list>
+        <welcome-file>
+           home.html
+        </welcome-file>
+    </welcome-file-list>
+    
+    <!--LogIn page map-->
+    <servlet>
+        <servlet-name>log</servlet-name>
+        <servlet-class>login_handler.login_register_handler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>log</servlet-name>
+        <url-pattern>/loginMap</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>logOut</servlet-name>
+        <servlet-class>login_handler.logout_handler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logOut</servlet-name>
+        <url-pattern>/logoutMap</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>forgetPassword</servlet-name>
+        <servlet-class>login_handler.forget_password_handler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>forgetPassword</servlet-name>
+        <url-pattern>/forgetPasswordMap</url-pattern>
+    </servlet-mapping>
+    
+    <!--admin panel map-->
+    <servlet>
+        <servlet-name>collabrater</servlet-name>
+        <servlet-class>admin_panel_handler.collabrater_handler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>collabrater</servlet-name>
+        <url-pattern>/collabraterMap</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>build</servlet-name>
+        <servlet-class>admin_panel_handler.build_handler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>build</servlet-name>
+        <url-pattern>/buildMap</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>build_data</servlet-name>
+        <servlet-class>dashborad_db_handler.build_data_handler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>build_data</servlet-name>
+        <url-pattern>/buildDataMap</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>collaborate_data</servlet-name>
+        <servlet-class>dashborad_db_handler.collaborate_data_handler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>collaborate_data</servlet-name>
+        <url-pattern>/collaborateDataMap</url-pattern>
+    </servlet-mapping>
+</web-app>

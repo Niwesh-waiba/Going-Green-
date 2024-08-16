@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "montserrat";
+    color: #fff;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #95c11e;
+}
+
+#nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    justify-content: space-evenly;
+    backdrop-filter: blur(20px);
+}
+
+#nav a{
+    display: flex;
+}
+
+#nav img{
+    height: 7vw;
+}
+
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 1500;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    top:0;
+    position: fixed;
+
+}
+
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+
+#build1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+#build1 h1{
+    font-size: 7.5vw;
+    font-weight: 900;
+    position: relative;
+}
+
+#build1 h1::before{
+    content: "Switch to Smart Agriculture";
+    position:absolute;
+    color: #000;
+    top: -5px;
+    left: -5px;
+    -webkit-text-stroke: 1.5px #95c11e;
+    z-index: -1;
+}
+
+#build1 p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    width: 40%;
+}
+
+#build1 #arrow{
+    height: 250px;
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid #95c11e;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -2%;
+    bottom: 0%;
+    position: absolute;
+}
+
+#build1 #arrow:hover{
+    scale: 0.4;
+    background-color: #95c11e;
+}
+
+#build1 #arrow i{
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.build-h3{
+    position: relative;
+    top: 220px;
+    font-weight: 700;
+    z-index: 10;
+    text-align: center;
+    font-size: 30px;
+}
+
+#build2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+#build2 > p{
+    font-size: 25px;
+    font-weight: 700;
+    width: 60%;
+    line-height: 45px;
+    text-align: center;
+}
+#build2 > ul{
+    font-size: 18px;
+    font-weight: 600;
+    width: 250px;
+    line-height: 45px;
+    text-align: center;
+}
+
+
+
+
+#build2 img {
+    position: absolute;
+    height: 60px;
+}
+#build2 #colon1 {
+    left: 15%;
+    top: 25%;
+}
+#build2 #colon2 {
+    top: 25%;
+    right: 15%;
+}
+
+#about-us {
+    height: 40vh;
+    width: 100%;
+    
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    justify-content: space-around;
+}
+#about-us-in h3 {
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+#cards-container {
+    
+    height: 60vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+}
+.card {
+    height: 80%;
+    width: 24%;
+    
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #cdcd5f;
+    padding: 30px;
+    padding-top: 100px;
+    
+    
+}
+.overlay h4 {
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-weight: 1000;
+}
+.overlay p {
+    color: #000;
+    font-size: 20px;
+}
+
+#form-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+  
+}
+#form-btn p {
+  margin-right: 20px;
+  font-size: 30px;
+}
+#form-btn button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  transition: .5s ease;
+  cursor: pointer;
+  
+}
+
+#form-btn button:hover{
+  opacity: .75;
+}
+
+
+
+#footer {
+    height: 40vh;
+    width: 100%;
+    backdrop-filter: blur(60px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6.5vw;
+    padding: 0 100px;
+    margin-top: 20px;
+}
+#foot-logo img {
+  height: 100%;
+}
+
+#f1,
+#f2,
+#f3,
+#f4 {
+    width: fit-content;
+    position: relative;
+    z-index: 99;
+    /* background-color: red; */
+    color: #fff;
+}
+
+#f2 h3 {
+    font-size: 1vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+
+#f4 h4 {
+    font-size: .9vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+

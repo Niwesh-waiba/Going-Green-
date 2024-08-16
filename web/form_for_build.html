@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Build Form</title>
+        <!-- Bootstrap CSS link -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            />
+        <style>
+            body {
+                background-color: #00e400;
+            }
+
+            .container {
+                margin-top: 20vh;
+                margin-left: 20vh;
+                position: absolute;
+            }
+
+            form {
+                background-color: #fff;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0, 128, 0, 0.2);
+            }
+
+            .btn-submit {
+                background-color: #4caf50;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .modal-content {
+                background-color: #eafbea;
+                text-align: center;
+            }
+
+            #successModal {
+                color: #4caf50;
+            }
+
+            label {
+                color: #4caf50;
+            }
+
+            #name {
+                width: 50%;
+                float: left;
+            }
+
+
+            #nav{
+                height: 10%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                position: fixed;
+                z-index: 999;
+                justify-content: space-evenly;
+                backdrop-filter: blur(20px);
+            }
+
+            #nav a{
+                color: white;
+                display: flex;
+            }
+
+            #nav img{
+                height: 7vw;
+            }
+
+            #nav h4{
+                text-transform: uppercase;
+                font-weight: 1500;
+                cursor: pointer;
+                font-size: 1vw;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="nav">
+            <img src="image/logo.png" title="logo" alt="image not available" />
+            <a href="home.html"><h4>HOME</h4></a>
+            <a href="home.html"><h4>ABOUT US</h4></a>
+            <a href="home.html"><h4>SERVICES</h4></a>
+            <a href="home.html"><h4>CONTACT</h4></a>
+            <a href="login.html">
+                <h4>Login &nbsp;&nbsp;</h4>
+                <i class="fas fa-user fa-lg"> </i>
+            </a>
+        </div>
+        <video autoplay loop muted src="image/bg_video.mp4" style="position: absolute;"></video>
+
+
+        <div class="container">
+            <form id="feedbackForm" action="buildDataMap" method="post">
+                <h2 class="text-center mb-4" style="color: #4caf50">
+                    Fill Your Details
+                </h2>
+
+                <div class="form-group">
+                    <label for="name">Name:</label> <br>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="fname"
+                        placeholder="First Name"
+                        required
+                        />
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="lname"
+                        placeholder="Last Name"
+                        required
+                        />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        required
+                        />
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input
+                        type="number"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your Number"
+                        required
+                        />
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="location"
+                        name="location"
+                        placeholder="Example: Kapan, Sukedhara"
+                        required
+                        />
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea
+                        class="form-control"
+                        id="comments"
+                        name="comments"
+                        rows="4"
+                        placeholder="Details For GreenHouse StartUp"
+                        required
+                        ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit btn-block">Submit</button>
+            </form>
+        </div>
+
+
+    </body>
+</html>
